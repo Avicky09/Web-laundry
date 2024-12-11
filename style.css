@@ -1,0 +1,175 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Menambahkan box-sizing agar padding dan border tidak mengubah ukuran elemen */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #ffffff;
+  padding: 1rem; /* Menambah padding pada navbar agar lebih proporsional */
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333; /* Menambahkan warna teks */
+}
+
+.navbar-nav .nav-link {
+  color: #333; /* Menambahkan warna pada link navbar */
+  padding: 0.5rem 1rem; /* Menambahkan padding pada setiap item navbar */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Warna hover untuk link navbar */
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('laundry-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 1rem; /* Menambah padding di sisi kiri dan kanan */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem; /* Memberikan jarak bawah pada judul */
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem; /* Memberikan jarak bawah pada deskripsi */
+}
+
+.hero .btn {
+  font-size: 1.2rem;
+  padding: 1rem 2rem; /* Memperbesar tombol agar lebih mudah diklik */
+  border-radius: 25px; /* Menambah border radius agar tombol lebih bulat */
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #0056b3; /* Mengubah warna tombol saat di-hover */
+}
+
+/* Service Card Styles */
+.service-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-card i {
+  color: #3498db;
+  font-size: 3rem; /* Menambah ukuran ikon */
+  margin-bottom: 1rem;
+}
+
+.service-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #666; /* Memberikan warna lebih lembut pada deskripsi */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero .btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem; /* Mengurangi ukuran tombol pada layar kecil */
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem;
+  }
+
+  .service-card {
+    padding: 1.5rem; /* Mengurangi padding untuk tampilan mobile */
+  }
+}
+
+/* CSS untuk penanda link */
+.service-link {
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.service-link:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Additional Enhancements */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Responsive Service Cards Layout */
+@media (max-width: 767px) {
+  .service-card {
+    margin-bottom: 1rem; /* Menambah margin bawah untuk jarak antar kartu */
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center; /* Menata kartu layanan menjadi kolom pada layar kecil */
+  }
+
+  .col-md-4 {
+    width: 100%; /* Membuat kartu layanan menggunakan 100% lebar layar pada perangkat kecil */
+  }
+}
+
+/* Animasi saat kartu layanan di-hover */
+.card-hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease; /* Animasi transisi halus */
+}
